@@ -47,7 +47,7 @@ public class UserControllerTest {
 	}
 	
 	@Test
-	void getUsername_notFound_returns200() throws Exception {
+	void getUsername_notFound_returns404() throws Exception {
 		
 		when(mockService.getUsername(99)).thenReturn("Unknown User");
 		
